@@ -34,6 +34,7 @@ body {
 p {
     background-color: rgb(255, 228, 196, 0.7);
     border: 5px ridge cyan;
+    box-shadow: 5px 5px;
 }
 
 nav {
@@ -49,11 +50,21 @@ nav li {
 
 #tablehead {
     font-family: serif;
+    color: yellow;
+    font-family: monospace;
+    font-size: 18pt;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+td {
+    text-align: center;
 }
 
 /* Next section contains styling for the table of pokemon types */
 
 #normal {
+    position: center;
     background-color: gray;
 }
 
@@ -145,11 +156,14 @@ nav li {
     position: center;
     display: inline-block;
     padding: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
 }
 
-.imagecol2.left {
-    background-image: url("ocean-rocks-mew-bg.png");
-    background-size: 600px 600px;
-    background-repeat: no-repeat;
-    background-position: center;
+.imagecol2:hover {
+    opacity: 1;
 }
