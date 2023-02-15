@@ -1,0 +1,155 @@
+h1 {
+    color: yellow;
+    font-family: monospace;
+    font-size: 50pt;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: blue;
+}
+
+h2 {
+    color: yellow;
+    font-family: monospace;
+    font-size: 30pt;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: blue;
+}
+
+h3 {
+    color: yellow;
+    font-family: monospace;
+    font-size: 18pt;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+body {
+    background-image: url("johto-sunset-test.png");
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+p {
+    background-color: rgb(255, 228, 196, 0.7);
+    border: 5px ridge cyan;
+}
+
+nav {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    box-shadow: 5px 5px;
+    padding: 10px;
+    border: 5px ridge cyan;
+}
+
+#tablehead {
+    font-family: serif;
+}
+
+/* Next section contains styling for the table of pokemon types */
+
+#normal {
+    background-color: gray;
+}
+
+#fire {
+    background-color: red;
+}
+
+#water {
+    color: white;
+    background-color: blue;
+}
+
+#grass {
+    background-color: forestgreen;
+}
+
+#rock {
+    background-color: brown;
+}
+
+#fighting {
+    color: white;
+    background-color: maroon;
+}
+
+#psychic {
+    background-color: fuchsia;
+}
+
+#ghost {
+    color: white;
+    background-color: indigo;
+}
+
+#bug {
+    background-color: olivedrab;
+}
+
+#poison {
+    color: white;
+    background-color: purple;
+}
+
+#flying {
+    background-color: skyblue;
+}
+
+#electric {
+    background-color: gold;
+}
+
+#ground {
+    background-color: chocolate;
+}
+
+#ice {
+    background-color: cyan;
+}
+
+#dragon {
+    color: white;
+    background-color: darkblue;
+}
+
+#dark {
+    color: white;
+    background-color: darkslategray;
+}
+
+#steel {
+    background-color: dimgray;
+}
+
+#fairy {
+    background-color: hotpink;
+}
+
+.imagecol {
+    position: center;
+    display: inline-block;
+    padding: 10px;
+    background-image: url("pokeball.png");
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imagecol2 {
+    position: center;
+    display: inline-block;
+    padding: 10px;
+}
+
+.imagecol2.left {
+    background-image: url("ocean-rocks-mew-bg.png");
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

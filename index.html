@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <!-- This is the link to the main stylesheet. -->
+    <link id='csslink' rel="stylesheet" href="main.css" />
+
+    <!-- Next is the JavaScript code that makes the "Switch Style" button work. -->
+    <script>
+        function toggleCSS() {
+            // Obtains the <link> element that links to the css (by using its id).
+            var currentCSS = document.getElementById('csslink');
+
+            // Change the value of href attribute to change the css file.
+            if (currentCSS.getAttribute('href') == 'main.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'main.css');
+            }
+        }
+    </script>
+
+    <!-- changes name on webbar -->
+    <title>Pokémon: A Look into the Series!</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Pokémon: A Look into the Series!</h1>
+
+        <nav>
+            <!-- this is the nav list, the links when click on naviagte to the header listed, has a nested unordered list inside-->
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#pokemon">Pokémon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- button to switch styles -->
+    <br />
+    <button onclick="toggleCSS()">Switch Style</button>
+    <br />
+
+    <main>
+
+        <!-- section for the introduction header, gonna include background of pokemon and expand past what is held here. Nothing crazy here maybe a link to a
+        wiki for pokemon to fufil one of the links-->
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                Pokémon is a popular media franchise created by Satoshi Tajiri and Ken Sugimori and owned
+                by The Pokémon Company. It began as a series of video games for the Game Boy being published by the company Game Freak and has since expanded into an anime,
+                manga, trading card game, and more. The franchise revolves around the capture and training of creatures known as Pokémon,
+                with the goal of becoming a Pokémon master.
+            </p>
+            <!--FIRST External LINK HERE -->
+            <a href="https://notify.pokemon.com/us/" target="_blank">Learn about upcoming events and official Pokémon news from The Pokémon Company</a>
+        </section>
+
+
+        <!-- section for the gameplay header
+        gonna add two sub sections here with h3 for the different headers, two sub sections under gameplay 1 for trading card game and 1 for video game -->
+        <section id="gameplay">
+            <h2>Gameplay</h2>
+            <p>
+                Pokémon can be broken down into two diffrent formats for gameplay. The first is the oringial type of gameplay seen by the franchise
+                many kids grew up playing Pokémon this way. This is the Trading Card Franchise. A game based of the Pokémon franchise where players aim to collect and
+                trade cards to battle!. The second type of gameplay seen by the fanchise has continued to grow since it's inception and makes childhoods some would claim
+                even more fun than the tradning card game. This is the Video Game Franchise created and published by Game Freak. An adaptation of the Pokémon series made
+                into videogames where the player unergoes challenges, and captures Pokémon.
+            </p>
+
+            <ul>
+                <li><h3>Trading Card Franchise</h3></h3></li>
+                <p>
+                    The Pokémon Trading Card Game (often abbreviated as Pokémon TCG) is a collectible card game based on the popular Pokémon video game franchise.
+                    Players build decks of cards featuring various Pokémon creatures and use them to battle against each other.
+                    Each Pokémon card features a unique character and its stats, such as hit points,
+                    attack points, and special abilities. Players use their decks to take turns playing cards
+                    and using their Pokémon's abilities to try and defeat their opponent's Pokémon.
+                </p>
+            </ul>
+
+            <ul>
+                <li><h3> Video Game Franchise</h3></li>
+                <p>
+                    The Pokémon video games feature gameplay in which players collect and train
+                    Pokémon to compete against other trainers. In each game, the player travels through various regions,
+                    capturing new Pokémon and battling other trainers to progress through the game. As players progress,
+                    they can evolve their Pokémon to make them stronger, and can also trade Pokémon
+                    with other players to complete their collection, all working towards the ultime goal of defetaing the Elite Four! A group of
+                    the four best trainers with their own unique team of Pokémon.
+                </p>
+                <a href="secondpage.html" target="_self">Learn the basics of being a Pokémon Trainer</a>
+            </ul>
+            <!--INTERNAL  LINK HERE ^^^ -->
+
+        </section>
+
+
+        <!-- section for Pokemon header, table goes here think type/amount/example 3columns, x amount of rows-->
+        <section id="pokemon">
+            <h2>Pokémon</h2>
+            <p>
+                There are over 800 different species of Pokémon, each with unique abilities and appearance.
+                Some of the most well-known Pokémon include Pikachu, Charizard, and Mewtwo.
+                Each species has different strengths and weaknesses,
+                and the types of Pokémon a player collects can have a big impact on their chances of success in battle.
+            </p>
+            <p>Here is a breakdown of the diffrent elemental types a Pokémon can have, the total amount of each type, and an example of each: </p>
+
+            <!-- for the following table, each pokemon type and row has been defined with an ID of the type. Each id is the type lowercase for styling purposes-->
+
+            <table>
+                <tr id="tablehead">
+                    <th>Element</th>
+                    <th>Total Amount</th>
+                    <th>Example Pokémon</th>
+                </tr>
+                <tr id="normal">
+                    <td>Normal</td>
+                    <td>132</td>
+                    <td>Meowth</td>
+                </tr>
+                <tr id="fire">
+                    <td>Fire</td>
+                    <td>86</td>
+                    <td>Charmander</td>
+                </tr>
+                <tr id="water">
+                    <td>Water</td>
+                    <td>157</td>
+                    <td>Squirtle</td>
+                </tr>
+                <tr id="grass">
+                    <td>Grass</td>
+                    <td>124</td>
+                    <td>Bulbasuar</td>
+                </tr>
+                <tr id="rock">
+                    <td>Rock</td>
+                    <td>76</td>
+                    <td>Onix</td>
+                </tr>
+                <tr id="fighting">
+                    <td>Fighting</td>
+                    <td>82</td>
+                    <td>Hitmonchan</td>
+                </tr>
+                <tr id="psychic">
+                    <td>Psychic</td>
+                    <td>105</td>
+                    <td>Mewtwo</td>
+                </tr>
+                <tr id="ghost">
+                    <td>Ghost</td>
+                    <td>70</td>
+                    <td>Gengar</td>
+                </tr>
+                <tr id="bug">
+                    <td>Bug</td>
+                    <td>92</td>
+                    <td>Caterpie</td>
+                </tr>
+                <tr id="poison">
+                    <td>Poison</td>
+                    <td>83</td>
+                    <td>Toxtricity</td>
+                </tr>
+                <tr id="flying">
+                    <td>Flying</td>
+                    <td>112</td>
+                    <td>Sparrow</td>
+                </tr>
+                <tr id="electric">
+                    <td>Electric</td>
+                    <td>72</td>
+                    <td>Pikachu</td>
+                </tr>
+                <tr id="ground">
+                    <td>Ground</td>
+                    <td>77</td>
+                    <td>Diglet</td>
+                </tr>
+                <tr id="ice">
+                    <td>Ice</td>
+                    <td>58</td>
+                    <td>Glaceon</td>
+                </tr>
+                <tr id="dragon">
+                    <td>Dragon</td>
+                    <td>69</td>
+                    <td>Dragonite</td>
+                </tr>
+                <tr id="dark">
+                    <td>Dark</td>
+                    <td>83</td>
+                    <td>Umbreon</td>
+                </tr>
+                <tr id="steel">
+                    <td>Steel</td>
+                    <td>75</td>
+                    <td>Metagross</td>
+                </tr>
+                <tr id="fairy">
+                    <td>Fairy</td>
+                    <td>69</td>
+                    <td>Jigglypuff</td>
+                </tr>
+
+            </table>
+            <!-- end of table-->
+            <!-- defining these images as classes to allow for CSS styling to be applied to have them side by side-->
+            <p>
+                Here are some examples of a classic water type, fire type, and grass type Pokémon. These are the three most popular Pokémon by far since they are the starting
+                trio a new player has to decide between at the start of older Pokémon games. The blue Pokémon is Squirtle, a water type.The red Pokémon is Charmander, a fire type.
+                Tthe green Pokémon is Bulbasuar, a grass type.
+            </p>
+            <div class="imagerow">
+                <div class="imagecol">
+                    <img src="squirtle.png" alt="Photo of Squirtle the Pokémon" />
+                </div>
+                <div class="imagecol">
+                    <img src="charmander.png" alt="Photo of Charmander the Pokémon" />
+                </div>
+                <div class="imagecol">
+                    <img src="bulbasuar.png" alt="Photo of Bulbasuar the Pokémon" />
+                </div>
+            </div>
+            <br />
+            <p>
+                Here are also two of the most exclusive type of Pokémon, the legendaries! These are elusive, extremely hard to catch, and immesnsely powerful! Below are two of
+                of the most memorable. The smaller of the two is Mew, the first ever Pokémon. A very playful and curious Pokémon, it prefers having fun over fighting. The larger
+                of them both is Mewtwo, an artificially created and immensely powerful Pokémon. A very angry and introverted Pokémon, it is full of hate and anger towards humans and its creators
+            </p>
+            <div class="imagerow2">
+                <div class="imagecol2">
+                    <img src="mew.png" alt="Photo of Mew, the Pokémon" />
+                </div>
+                <div class="imagecol2">
+                    <img src="mewtwo.png" alt="Photo of Mewtwo, the Pokémon" />
+                </div>
+                <!-- Second external link goes here, think " for a complete list of all pokemon throught the entire game libraries visit: X" after table-->
+                <p>
+                    For a complete list of all Pokémon throughout the entire series, find them all here at the
+                    <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number" target="_blank"> BulbaGarden Complete Pokédex</a>
+                </p>
+
+
+        </section>
+
+    </main>
+    <!--end of main -->
+    <!-- footer -->
+    <footer>
+        <br />
+        <section id="footer">
+            <p>&copy; 2023 Pokémon | &copy; Simonds, Dawkins, and Cruz</p>
+        </section>
+    </footer>
+    <!-- end of footer -->
+
+
+</body>
+<!-- end of body -->
+
+
+
+</html>
+<!--end of HTML -->
