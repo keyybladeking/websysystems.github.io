@@ -22,6 +22,19 @@ h3 {
     -webkit-text-stroke-color: blue;
 }
 
+a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13pt;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 1px black;
+}
+
+a:visited {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13pt;
+    color: rgb(196, 49, 196);
+}
+
 body {
     background-image: url("johto-sunset-test.png");
     min-height: 100%;
@@ -35,6 +48,8 @@ p {
     background-color: rgb(255, 228, 196, 0.7);
     border: 5px ridge cyan;
     box-shadow: 5px 5px;
+    font-size: 13pt;
+    display: inline-block;
 }
 
 nav {
@@ -45,8 +60,13 @@ nav li {
     display: inline-block;
     box-shadow: 5px 5px;
     padding: 10px;
-    border: 5px ridge cyan;
+    border: 7px ridge silver;
+    background-image: url("pokeball-header-bg-test.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/* Next section contains styling for the table of pokemon types */
 
 #tablehead {
     font-family: serif;
@@ -58,10 +78,13 @@ nav li {
 }
 
 td {
+    color: white;
+    font-size: 14pt;
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
 }
-
-/* Next section contains styling for the table of pokemon types */
 
 #normal {
     position: center;
@@ -73,7 +96,6 @@ td {
 }
 
 #water {
-    color: white;
     background-color: blue;
 }
 
@@ -82,11 +104,10 @@ td {
 }
 
 #rock {
-    background-color: brown;
+    background-color: rgb(88, 42, 10);
 }
 
 #fighting {
-    color: white;
     background-color: maroon;
 }
 
@@ -95,7 +116,6 @@ td {
 }
 
 #ghost {
-    color: white;
     background-color: indigo;
 }
 
@@ -104,7 +124,6 @@ td {
 }
 
 #poison {
-    color: white;
     background-color: purple;
 }
 
@@ -125,12 +144,10 @@ td {
 }
 
 #dragon {
-    color: white;
     background-color: darkblue;
 }
 
 #dark {
-    color: white;
     background-color: darkslategray;
 }
 
@@ -142,7 +159,10 @@ td {
     background-color: hotpink;
 }
 
-.imagecol {
+/*End of styling for pokemon types */
+
+/* Styling of Starter and Legendary pokemon*/
+.imagecol { /*Starters*/
     position: center;
     display: inline-block;
     padding: 10px;
@@ -152,8 +172,8 @@ td {
     background-position: center;
 }
 
-.imagecol2 {
-    position: center;
+.imagecol2 { /*Mew and Mewtwo*/
+    position: right;
     display: inline-block;
     padding: 10px;
     opacity: 0;
@@ -166,4 +186,21 @@ td {
 
 .imagecol2:hover {
     opacity: 1;
+}
+
+/* styles for 2nd page of website*/
+
+#battle {
+    border: 5px ridge gold;
+    box-shadow: 5px 5px;
+}
+
+#TipsAndTricks {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 5px 5px;
+    border: 5px ridge silver;
+    background-color: rgb(255, 228, 196, 0.7);
 }
