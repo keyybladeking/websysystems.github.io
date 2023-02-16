@@ -1,0 +1,250 @@
+body {
+    background-image: url("gotta_catch_em_all.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    text-align: center;
+    
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    border: 3px solid rgb(0, 170, 255);
+    box-shadow: 5px 5px 5px black;
+    background-image: url("pokeball.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    text-shadow: 2px 2px 2px blue;
+    letter-spacing: 5px;
+    font-size: 50pt;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 2px blue;
+}
+
+#tablehead {
+    background-color: black;
+}
+
+#normal {  
+    background-color: slategray; 
+}
+
+#fire { 
+    background-color: orangered;  
+}
+
+#water {
+    background-color: aqua; 
+    color: black;
+}
+
+#grass {   
+    background-color: greenyellow;
+}
+
+#rock {   
+    background-color: rgb(19, 67, 106);
+}
+
+#fighting {
+    background-color: rgb(3, 126, 156);   
+}
+
+#psychic {   
+    background-color: palevioletred;
+}
+
+#ghost {  
+    background-color: rgb(96, 42, 96); 
+}
+
+#bug {   
+    background-color: rgb(1, 255, 1);
+    color: black;
+}
+
+#poison {  
+    background-color: rgb(242, 61, 242); 
+}
+
+#flying {   
+    background-color: rgb(155, 73, 73);
+}
+
+#electric {   
+    background-color: rgb(255, 255, 0);
+    color: black;
+}
+
+#ground {  
+    background-color: rgb(255, 140, 0); 
+}
+
+#ice {   
+    background-color: aquamarine;
+    color: black;
+}
+
+#dragon {   
+    background-color: darkcyan;
+}
+
+#dark { 
+    background-color: darkred;  
+}
+
+#steel {  
+    background-color: steelblue; 
+}
+
+#fairy {   
+    background-color: hotpink;
+}
+
+
+#introduction {
+    color: yellow;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: "lucida console", monospace;
+    margin-bottom: 5rem;
+    text-align: center;
+    
+  }
+
+#introduction a {
+    position: relative;
+    left: 10px;
+}
+
+#gameplay {
+    color: yellow;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: "lucida console", monospace;
+    text-align: center;
+}
+
+#gameplay a {
+    position: relative;
+    left: 20px;
+}
+
+li {
+    color: yellow;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: "lucida console", monospace; 
+}
+
+#pokemon {
+    text-align: center;
+    position: relative;
+    left: 50px;
+    color: yellow;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: "lucida console", monospace;
+}
+
+#starters {
+    position: absolute;
+    left: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 40%;
+    margin: 40rem 10rem 20rem 10rem;
+    border: 3px solid rgb(0, 170, 255);
+    box-shadow: 5px 5px 5px black;
+    float: left;
+    background-color: rgb(0, 255, 13, 0.6); 
+}
+
+p {
+    width: 75%;
+    padding: 1%;
+    position: relative;
+    left: 150px;
+    border: 3px solid rgb(0, 170, 255);
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(0, 255, 13, 0.6);
+    font-weight: bolder;
+    font-family: "lucida console", monospace;
+    font-size: 12pt;
+}
+
+a {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(0, 229, 255);
+    font-size: 12pt;
+}
+
+a:visited {
+    font-size: 12pt;
+    color: rgb(255, 94, 0);
+}
+
+.imagecol {
+    display: block;
+    width: 35%;
+    margin-left: auto;
+}
+
+#legendaries {
+    position: absolute;
+    left: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 40%;
+    margin: 20rem 10rem 50rem;
+    border: 3px solid rgb(0, 170, 255);
+    box-shadow: 5px 5px 5px black;
+    float: right;
+    background-color: rgb(0, 255, 13, 0.6); 
+}
+
+.imagecol2 {
+    display: block;
+    width: 30%;
+    margin-right: auto;
+}
+
+#pokemon a {
+    /* width: 50%;
+    padding: 5px; */
+    text-align: 150px;
+    position: relative;
+    left: 20px;
+    font-weight: bolder;
+    font-family: "lucida console", monospace;
+}
+
+#footer {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 350px;
+}
