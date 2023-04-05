@@ -162,6 +162,15 @@ td {
 /*End of styling for pokemon types */
 
 /* Styling of Starter and Legendary pokemon*/
+
+.carousel-inner img {
+    display: inline-block !important;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
 .imagecol { /*Starters*/
     position: center;
     display: inline-block;

@@ -239,11 +239,47 @@
     <!-- end of table-->
             <!-- defining these images as classes to allow for CSS styling to be applied to have them side by side-->
             <p id="starters">
-                Here are some examples of a classic water type, fire type, and grass type Pokémon. These are the three most popular Pokémon by far since they are the starting
-                trio a new player has to decide between at the start of older Pokémon games. The blue Pokémon is Squirtle, a water type.The red Pokémon is Charmander, a fire type.
-                Tthe green Pokémon is Bulbasuar, a grass type.
+                Here are some examples of a classic grass type, fire type, and water type Pokémon. These are the three most popular Pokémon by far since they are the starting
+                trio a new player has to decide between at the start of older Pokémon games. The green Pokémon is Bulbasuar, a grass type. The red Pokémon is Charmander, a fire type. The blue Pokémon is Squirtle, a water type.
+                Another example of starters that were introduced was the choice between Pikachu, the yellow eletric mouse Pokemon and Eevee, the genetically-unstable evolution Pokemon.
             </p>
-            <div class="imagerow">
+            <!--Added Bootstrap carousel HTML from https://getbootstrap.com/docs/5.3/components/carousel/-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="bulbasuar.png" alt="Photo of Bulbasuar the Pokémon" class="d-block w-30">
+                      </div>
+                  <div class="carousel-item">
+                    <img src="charmander.png" alt="Photo of Charmander the Pokémon" class="d-block w-30">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="squirtle.png" alt="Photo of Squirtle the Pokémon" class="d-block w-30">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="pikachu.png" alt="Photo of Pikachu the Pokémon" class="d-block w-5">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="eevee.png" alt="Photo of Eevee the Pokémon" class="d-block w-5">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!--End of added Bootstrap for image carousel-->
+            <!-- <div class="imagerow">
                 <div class="imagecol">
                     <img src="squirtle.png" alt="Photo of Squirtle the Pokémon" />
                 </div>
@@ -253,7 +289,7 @@
                 <div class="imagecol">
                     <img src="bulbasuar.png" alt="Photo of Bulbasuar the Pokémon" />
                 </div>
-            </div>
+            </div> -->
             <br />
             <p id="legendaries">
                 Here are also two of the most exclusive type of Pokémon, the legendaries! These are elusive, extremely hard to catch, and immesnsely powerful! Below are two of
