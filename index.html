@@ -2,11 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- This is the link to the main stylesheet. -->
     <link id='csslink' rel="stylesheet" href="main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+          crossorigin="anonymous">
+    <!-- This is the link to the bootstrap CDN -->
+
+
 
     <!-- Next is the JavaScript code that makes the "Switch Style" button work. -->
+
+
     <script>
         function toggleCSS() {
             // Obtains the <link> element that links to the css (by using its id).
@@ -27,6 +35,10 @@
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+            crossorigin="anonymous"></script>
+
     <header>
         <h1>Pokémon: A Look into the Series!</h1>
 
@@ -111,109 +123,120 @@
                 Each species has different strengths and weaknesses,
                 and the types of Pokémon a player collects can have a big impact on their chances of success in battle.
             </p>
-            
-                <p><span id="tablestart">Here is a breakdown of the diffrent elemental types a Pokémon can have, the total amount of each type, and an example of each: </span></p>
+
+            <p><span id="tablestart">Here is a breakdown of the diffrent elemental types a Pokémon can have, the total amount of each type, and an example of each: </span></p>
             <!-- for the following table, each pokemon type and row has been defined with an ID of the type. Each id is the type lowercase for styling purposes-->
 
-            <table>
-                <tr id="tablehead">
-                    <th>Element</th>
-                    <th>Total Amount</th>
-                    <th>Example Pokémon</th>
-                </tr>
-                <tr id="normal">
-                    <td>Normal</td>
-                    <td>132</td>
-                    <td>Meowth</td>
-                </tr>
-                <tr id="fire">
-                    <td>Fire</td>
-                    <td>86</td>
-                    <td>Charmander</td>
-                </tr>
-                <tr id="water">
-                    <td>Water</td>
-                    <td>157</td>
-                    <td>Squirtle</td>
-                </tr>
-                <tr id="grass">
-                    <td>Grass</td>
-                    <td>124</td>
-                    <td>Bulbasuar</td>
-                </tr>
-                <tr id="rock">
-                    <td>Rock</td>
-                    <td>76</td>
-                    <td>Onix</td>
-                </tr>
-                <tr id="fighting">
-                    <td>Fighting</td>
-                    <td>82</td>
-                    <td>Hitmonchan</td>
-                </tr>
-                <tr id="psychic">
-                    <td>Psychic</td>
-                    <td>105</td>
-                    <td>Mewtwo</td>
-                </tr>
-                <tr id="ghost">
-                    <td>Ghost</td>
-                    <td>70</td>
-                    <td>Gengar</td>
-                </tr>
-                <tr id="bug">
-                    <td>Bug</td>
-                    <td>92</td>
-                    <td>Caterpie</td>
-                </tr>
-                <tr id="poison">
-                    <td>Poison</td>
-                    <td>83</td>
-                    <td>Toxtricity</td>
-                </tr>
-                <tr id="flying">
-                    <td>Flying</td>
-                    <td>112</td>
-                    <td>Sparrow</td>
-                </tr>
-                <tr id="electric">
-                    <td>Electric</td>
-                    <td>72</td>
-                    <td>Pikachu</td>
-                </tr>
-                <tr id="ground">
-                    <td>Ground</td>
-                    <td>77</td>
-                    <td>Diglet</td>
-                </tr>
-                <tr id="ice">
-                    <td>Ice</td>
-                    <td>58</td>
-                    <td>Glaceon</td>
-                </tr>
-                <tr id="dragon">
-                    <td>Dragon</td>
-                    <td>69</td>
-                    <td>Dragonite</td>
-                </tr>
-                <tr id="dark">
-                    <td>Dark</td>
-                    <td>83</td>
-                    <td>Umbreon</td>
-                </tr>
-                <tr id="steel">
-                    <td>Steel</td>
-                    <td>75</td>
-                    <td>Metagross</td>
-                </tr>
-                <tr id="fairy">
-                    <td>Fairy</td>
-                    <td>69</td>
-                    <td>Jigglypuff</td>
-                </tr>
+            <!-- boostrap added with the two div classes making the container-fluid to better fit screens of all sizes
+                adding the div for table-responsive for the scroll bar, and adding the class to the table for the hover function-->
+            <div class="container-fluid">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Total Amount</th>
+                                <th>Example Pokémon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="normal">
+                                <td>Normal</td>
+                                <td>132</td>
+                                <td>Meowth</td>
+                            </tr>
+                            <tr id="fire">
+                                <td>Fire</td>
+                                <td>86</td>
+                                <td>Charmander</td>
+                            </tr>
+                            <tr id="water">
+                                <td>Water</td>
+                                <td>157</td>
+                                <td>Squirtle</td>
+                            </tr>
+                            <tr id="grass">
+                                <td>Grass</td>
+                                <td>124</td>
+                                <td>Bulbasuar</td>
+                            </tr>
+                            <tr id="rock">
+                                <td>Rock</td>
+                                <td>76</td>
+                                <td>Onix</td>
+                            </tr>
+                            <tr id="fighting">
+                                <td>Fighting</td>
+                                <td>82</td>
+                                <td>Hitmonchan</td>
+                            </tr>
+                            <tr id="psychic">
+                                <td>Psychic</td>
+                                <td>105</td>
+                                <td>Mewtwo</td>
+                            </tr>
+                            <tr id="ghost">
+                                <td>Ghost</td>
+                                <td>70</td>
+                                <td>Gengar</td>
+                            </tr>
+                            <tr id="bug">
+                                <td>Bug</td>
+                                <td>92</td>
+                                <td>Caterpie</td>
+                            </tr>
+                            <tr id="poison">
+                                <td>Poison</td>
+                                <td>83</td>
+                                <td>Toxtricity</td>
+                            </tr>
+                            <tr id="flying">
+                                <td>Flying</td>
+                                <td>112</td>
+                                <td>Sparrow</td>
+                            </tr>
+                            <tr id="electric">
+                                <td>Electric</td>
+                                <td>72</td>
+                                <td>Pikachu</td>
+                            </tr>
+                            <tr id="ground">
+                                <td>Ground</td>
+                                <td>77</td>
+                                <td>Diglet</td>
+                            </tr>
+                            <tr id="ice">
+                                <td>Ice</td>
+                                <td>58</td>
+                                <td>Glaceon</td>
+                            </tr>
+                            <tr id="dragon">
+                                <td>Dragon</td>
+                                <td>69</td>
+                                <td>Dragonite</td>
+                            </tr>
+                            <tr id="dark">
+                                <td>Dark</td>
+                                <td>83</td>
+                                <td>Umbreon</td>
+                            </tr>
+                            <tr id="steel">
+                                <td>Steel</td>
+                                <td>75</td>
+                                <td>Metagross</td>
+                            </tr>
+                            <tr id="fairy">
+                                <td>Fairy</td>
+                                <td>69</td>
+                                <td>Jigglypuff</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-            </table>
-            <!-- end of table-->
+
+    <!-- end of table-->
             <!-- defining these images as classes to allow for CSS styling to be applied to have them side by side-->
             <p id="starters">
                 Here are some examples of a classic water type, fire type, and grass type Pokémon. These are the three most popular Pokémon by far since they are the starting
@@ -245,11 +268,13 @@
                     <img src="mewtwo.png" alt="Photo of Mewtwo, the Pokémon" />
                 </div>
                 <!-- Second external link goes here, think " for a complete list of all pokemon throught the entire game libraries visit: X" after table-->
-                    <p><span id="pokelist">
+                <p>
+                    <span id="pokelist">
                         For a complete list of all Pokémon throughout the entire series, find them all here at the
                         <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number" target="_blank"> BulbaGarden Complete Pokédex</a>
-                    </span></p>
-                
+                    </span>
+                </p>
+
 
         </section>
 
@@ -257,7 +282,7 @@
     <!--end of main -->
     <!-- footer -->
     <footer>
-            <p><span id="footer">&copy; 2023 Pokémon | &copy; Simonds, Dawkins, and Cruz</span></p>
+        <p><span id="footer">&copy; 2023 Pokémon | &copy; Simonds, Dawkins, and Cruz</span></p>
     </footer>
     <!-- end of footer -->
 

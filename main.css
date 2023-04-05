@@ -26,7 +26,6 @@ a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 13pt;
     color: rgb(0, 0, 0);
-    text-shadow: 0 0 1px black;
 }
 
 a:visited {
@@ -50,6 +49,7 @@ p {
     box-shadow: 5px 5px;
     font-size: 13pt;
     display: inline-block;
+    padding: 5px;
 }
 
 nav {
