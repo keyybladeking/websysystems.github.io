@@ -52,7 +52,7 @@ p {
     padding: 5px;
 }
 
-nav {
+/* nav {
     text-align: center;
 }
 
@@ -64,11 +64,11 @@ nav li {
     background-image: url("pokeball-header-bg-test.png");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 /* Next section contains styling for the table of pokemon types */
 
-#tablehead {
+/* #tablehead {
     font-family: serif;
     color: yellow;
     font-family: monospace;
@@ -84,7 +84,7 @@ td {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: black;
-}
+} */
 
 #normal {
     position: center;
